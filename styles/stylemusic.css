@@ -1,0 +1,19 @@
+
+.faixas{
+    display: flex;
+    gap: 40px;
+    margin-top: 20px;
+}
+@media  screen and (max-width: 692px) {
+    .faixas{
+        flex-direction: column;
+    }
+}
+.linkmusica{
+    text-decoration: none;
+    color: black;
+}
+.linkmusica:hover{
+    text-decoration: underline;
+    color: white;
+}
