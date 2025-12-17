@@ -1,19 +1,27 @@
 
 .faixas{
     display: flex;
-    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
     margin-top: 20px;
 }
-@media  screen and (max-width: 692px) {
-    .faixas{
-        flex-direction: column;
-    }
+
+.music {
+    display: flex;
+    transition: 0.3s;
 }
-.linkmusica{
+.music:hover{
+    scale: 1.1;
+    transition: 0.3s;
+}
+.linkmusica {
     text-decoration: none;
     color: black;
 }
-.linkmusica:hover{
+.linkmusica:hover {
     text-decoration: underline;
     color: white;
 }

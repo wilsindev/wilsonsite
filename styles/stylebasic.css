@@ -58,7 +58,7 @@ body{
 }
 .nav-items a{
     text-decoration: none;
-    color: white;
+    color: var(--cor-dourada);
 
 }
 .nav-items li{
@@ -98,4 +98,58 @@ body{
     font-size: 20px;
     width: 100%;
     color: rgb(0, 0, 0);
+}
+.navbar-mobile{
+    display: none;
+    flex-direction: column;
+    font-family: "Umeko Plum";
+}
+.navbar-mobile ul{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    height: 200px;
+}
+.navbar-mobile ul li{
+    list-style-type: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    background-color: var(--cor-dourada);
+    transition: 0.3s;
+}
+.navbar-mobile ul li a{
+    text-decoration: none;
+    color: black;   
+}
+.navbar-mobile ul li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#navbar-toggle{
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.navbar-mobile.active ul{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 692px) {
+    .nav-items{
+        display: none;
+    }
+    .navbar-mobile{
+        display: flex;
+        padding: 16px;
+        
+    }
+}
+@media  screen and (max-width: 392px) {
+    body{
+        overflow-x: hidden;
+    }
 }
