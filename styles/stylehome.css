@@ -49,8 +49,8 @@
         bottom: 150px;
     }
 }
-@media  screen and (max-width: 392px) {
-    body{
-        overflow-x: hidden;
+@media  screen and (max-width: 500px){
+    .btns-pags{
+        display: none;
     }
 }
