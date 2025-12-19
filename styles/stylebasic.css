@@ -14,7 +14,7 @@ body{
     padding: 0;
     margin: 0;
     background-color: black;
-    color:  gold;
+    color:  var(--cor-dourada);
 }
 ::-webkit-scrollbar {
     width: 20px;
@@ -85,6 +85,7 @@ body{
     display: flex;
     background-color: var(--cor-dourada);
     align-items: center;
+    text-align: justify;
     width: 100%;
     padding: 50px;
     height: 100%;
@@ -133,6 +134,11 @@ body{
     border: none;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
+}
+#navbar-toggle:hover{
+    transform: translateY(-5px);
+    transition: 0.3s;
 }
 .navbar-mobile.active ul{
     display: flex;
@@ -145,11 +151,8 @@ body{
     .navbar-mobile{
         display: flex;
         padding: 16px;
-        
     }
-}
-@media  screen and (max-width: 392px) {
-    body{
-        overflow-x: hidden;
+    .text{
+        text-align: center;
     }
 }
