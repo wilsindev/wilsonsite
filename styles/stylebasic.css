@@ -153,11 +153,8 @@ body{
         padding: 16px;
     }
     .text{
-        text-align: center;
+        text-align: justify;
         width: auto;
         padding: 40px;
-    }
-    body{
-        overflow-x: hidden;
     }
 }

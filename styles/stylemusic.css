@@ -43,3 +43,44 @@
 .album-music > .titulo{
     text-align: center
 }
+.sections{
+    display: flex;
+    gap: 10px;
+}
+.sections li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    max-width: 140px;
+    border-radius: 5px;
+    list-style-type: none;
+    background-color: var(--cor-dourada);
+    transition: 0.3s;
+}
+.sections li:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+.sections a{
+    text-decoration: none;
+    color: black;
+    font-family: 'blackfang';
+    font-size: 20px;
+}
+.instagram{
+    text-decoration: none;
+    color: black;
+}
+.instagram:hover{
+    color: white;
+    text-decoration: underline;
+}
+@media screen and (max-width: 692px) {
+    .sections{
+        flex-wrap: wrap;
+    }
+    .sections li{
+        width: 100%;
+    }
+}
