@@ -15,7 +15,7 @@
 }
 .music:hover{
     scale: 1.1;
-    box-shadow: 0 0 10px rgb(71, 71, 71);
+    box-shadow: 0 0 5px rgb(215, 215, 215);
     transition: 0.3s;
 }
 .linkmusica {
@@ -52,7 +52,8 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    max-width: 140px;
+    max-width: 100px;
+    width: 100%;
     border-radius: 5px;
     list-style-type: none;
     background-color: var(--cor-dourada);
@@ -76,11 +77,23 @@
     color: white;
     text-decoration: underline;
 }
-@media screen and (max-width: 692px) {
+.playlist > .text{
+    width: auto;
+}
+.playlist > .titulo{
+    text-align: center;
+}
+@media screen and (max-width: 1024px){
+    .sections{
+        flex-wrap: wrap;
+    }
     .sections{
         flex-wrap: wrap;
     }
     .sections li{
         width: 100%;
+    }
+    .text{
+        max-width: 800px;
     }
 }
