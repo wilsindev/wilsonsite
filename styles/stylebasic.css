@@ -144,7 +144,7 @@ body{
     display: flex;
     flex-direction: column;
 }
-@media screen and (max-width: 692px) {
+@media screen and (max-width: 768px) {
     .nav-items{
         display: none;
     }
@@ -153,8 +153,11 @@ body{
         padding: 16px;
     }
     .text{
-        text-align: justify;
+        text-align: center;
         width: auto;
-        padding: 40px;
+        padding: 20px 16px;
+    }
+    .main{
+        padding: 20px 16px;
     }
 }

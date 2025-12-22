@@ -49,8 +49,12 @@
         bottom: 150px;
     }
 }
+
 @media  screen and (max-width: 500px){
     .btns-pags{
+        display: none;
+    }
+    .cachorro{
         display: none;
     }
 }
