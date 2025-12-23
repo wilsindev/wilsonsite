@@ -7,9 +7,12 @@
 .pet{
     margin-top: 30px;
     font-family: 'umeko plum';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .pet img{
-    width: 200px;
     border-radius: 20px;
 }
 .aboutpet{
@@ -17,27 +20,35 @@
     font-size: 20px;
 }
 .nomepet{
-    position: relative;
-    right: 50px;
+    display: flex;
+    justify-content: center;
 }
 .sara{
     height: 100%;
     background-color: #FF087F;
     color: white;
     border-radius: 15px;
-    padding: 16px;
+    padding: 40px;
 }
 .pitoco{
     height: 100%;
     background-color: #4169e1;
     color: white;
     border-radius: 15px;
-    padding: 16px;
+    padding: 40px;
 }
 .rodrigo{
     height: 100%;
     background-color: #b90f0f;
     color: white;
     border-radius: 15px;
-    padding: 16px;
+    padding: 40px;
+}
+@media  screen and (max-width: 768px) {
+    .nomepet{
+        right: 0px;
+    }
+    .pet > img{
+        width: 300px;
+    }
 }
