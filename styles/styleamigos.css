@@ -1,0 +1,29 @@
+.amigo-foto-container{
+    max-width: 800px;
+    margin: 0 auto ;
+    width: 100%;
+}
+.amigo-foto{
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.amigo{
+    width: 100%;
+}
+.amigo > .text{
+    width: auto;
+}
+.amigo > .titulo{
+    text-align: center
+}
+.imagem-escondida {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s ease-in-out, visibility 3s ease-in-out;
+}
+.imagem-aparecendo {
+  opacity: 1;
+  visibility: visible;
+}
