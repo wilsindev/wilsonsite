@@ -1,12 +1,15 @@
+::-webkit-input-placeholder{
+    color: black;
+}
 .amigo-foto-container{
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto ;
     width: 100%;
 }
 .amigo-foto{
     border-radius: 12px;
     width: 100%;
-    height: auto;
+    max-height: 450px;
     margin-bottom: 20px;
 }
 .amigo{
@@ -18,12 +21,49 @@
 .amigo > .titulo{
     text-align: center
 }
-.imagem-escondida {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 3s ease-in-out, visibility 3s ease-in-out;
+.codigo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.imagem-aparecendo {
-  opacity: 1;
-  visibility: visible;
+.inputs{
+    flex-direction: row;
+    display: flex;
+    gap: 20px;
+}
+.input-code{
+    max-width: 200px;
+    width: 100%;
+    height: 40px;
+    border-radius: 7px;
+    background-color: var(--cor-dourada);
+    font-family: 'umeko plum';
+    color: black;
+    transition: 0.3s;
+    border: none;
+}
+.redeem{
+    background-color: var(--cor-dourada);
+    color: black;
+    font-family: 'umeko plum';
+    border-radius: 4px;
+    transition: 0.3s;
+    border: none;
+}
+.redeem:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: 0 0 3px white;
+}
+.input-code:focus{
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+@media  screen and (max-width: 762px) {
+    .inputs{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
 }

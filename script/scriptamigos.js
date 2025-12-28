@@ -1,18 +1,53 @@
-let contatenas = 0;
-const atenasimagem = document.getElementById('atenas');
-atenasimagem.addEventListener('click', () => {
-    contatenas ++;
-    if(contatenas === 3){
-    atenasimagem.src = "imgs/atenassecret.png";
-}
-    else if (contatenas > 3){
-        atenasimagem.src = "imgs/atenas.png";
-        contatenas = 0;
+// imagens
+const atenasimagem = document.getElementById('atenasfoto');
+const inforimagem = document.getElementById('inforimg');
+const beneimagem = document.getElementById("fidobene");
+const ivensimagem = document.getElementById("ivis")
+// dict com os codes
+const codigos = {
+        ATENASFOTO: {
+            img: atenasimagem,
+            src: 'imgs/atenassecret.png'
+        },
+        HELENAEJOSE: {
+            img: inforimagem,
+            src: 'imgs/teatroinfor.png'
+        },
+        FIDOBENE: {
+            img: beneimagem,
+            src: 'imgs/benekids.jpg'
+        },
+        BOMCURIOSO: {
+            img: ivensimagem,
+            src: 'imgs/bomcurioso.jpg'
+        }
+};
+
+
+const inputcodigo = document.getElementById('codigo-input');
+const redeem = document.getElementById("botaoredeem");
+let tentativa_code = '';
+
+redeem.addEventListener('click', () => {
+    tentativa_code = inputcodigo.value;
+    if (!(codigos[tentativa_code])){
+        inputcodigo.value = 'Código inválido.';
+        // o que ele deve fazer e depois de quanto tempo
+        setTimeout(() => {
+            inputcodigo.value = '';
+        }, 1000);
     }
-})
-function fazerAparecer() {
-  atenasimagem.classList.add('imagem-escondida');
-}
-if(contatenas === 3){
-    atenasimagem.src = "imgs/atenassecret.png";
-}
+    else{
+        //pega qual imagem vai ser alterada de acordo com o codigo e usa a src que vai ser mudada.
+        const img = codigos[tentativa_code].img;
+        const src = codigos[tentativa_code].src;
+        img.src = src;
+    }   
+
+        inputcodigo.value = 'Algo mudou no site...';
+        setTimeout(() => {
+            inputcodigo.value = '';
+        }, 1000);
+
+
+});
