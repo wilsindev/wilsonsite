@@ -5,7 +5,7 @@ const beneimagem = document.getElementById("fidobene");
 const ivensimagem = document.getElementById("ivis")
 // dict com os codes
 const codigos = {
-        ATENASFOTO: {
+        ATENAS: {
             img: atenasimagem,
             src: 'imgs/atenassecret.png'
         },
@@ -17,7 +17,7 @@ const codigos = {
             img: beneimagem,
             src: 'imgs/benekids.jpg'
         },
-        BOMCURIOSO: {
+        APENASUMBOMCURIOSO: {
             img: ivensimagem,
             src: 'imgs/bomcurioso.jpg'
         }
@@ -29,7 +29,7 @@ const redeem = document.getElementById("botaoredeem");
 let tentativa_code = '';
 
 redeem.addEventListener('click', () => {
-    tentativa_code = inputcodigo.value;
+    tentativa_code = inputcodigo.value.toUpperCase();
     if (!(codigos[tentativa_code])){
         inputcodigo.value = 'Código inválido.';
         // o que ele deve fazer e depois de quanto tempo
