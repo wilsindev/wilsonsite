@@ -3,11 +3,13 @@ const atenasimagem = document.getElementById('atenasfoto');
 const inforimagem = document.getElementById('inforimg');
 const beneimagem = document.getElementById("fidobene");
 const ivensimagem = document.getElementById("ivis")
+const dafnyimagem = document.getElementById('dafene')
+const guiimagem = document.getElementById("guizin")
 // dict com os codes
 const codigos = {
         ATENAS: {
             img: atenasimagem,
-            src: 'imgs/atenassecret.png'
+            src: 'imgs/atenassecret.jpeg'
         },
         HELENAEJOSE: {
             img: inforimagem,
@@ -20,6 +22,14 @@ const codigos = {
         APENASUMBOMCURIOSO: {
             img: ivensimagem,
             src: 'imgs/bomcurioso.jpg'
+        },
+        BACTERIA: {
+            img: dafnyimagem,
+            src: 'https://i.pinimg.com/736x/d7/2a/ea/d72aeafcc65e9b7f2e25cc9db5184c74.jpg'
+        },
+        GATO: {
+            img: guiimagem,
+            src: 'imgs/guiabrido.png'
         }
 };
 
