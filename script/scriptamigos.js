@@ -5,6 +5,8 @@ const beneimagem = document.getElementById("fidobene");
 const ivensimagem = document.getElementById("ivis")
 const dafnyimagem = document.getElementById('dafene')
 const guiimagem = document.getElementById("guizin")
+const duardaimagem = document.getElementById("eduarda")
+const josueimagem = document.getElementById("josue")
 // dict com os codes
 const codigos = {
         ATENAS: {
@@ -30,6 +32,14 @@ const codigos = {
         GATO: {
             img: guiimagem,
             src: 'imgs/guiabrido.png'
+        },
+        STICKYFINGERS: {
+            img: duardaimagem,
+            src: 'imgs/duardastand.png'
+        },
+        RAÇA: {
+            img: josueimagem,
+            src: 'imgs/jotinhaburro.jpg'
         }
 };
 
