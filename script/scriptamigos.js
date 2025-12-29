@@ -7,6 +7,7 @@ const dafnyimagem = document.getElementById('dafene')
 const guiimagem = document.getElementById("guizin")
 const duardaimagem = document.getElementById("eduarda")
 const josueimagem = document.getElementById("josue")
+const yuriimagem = document.getElementById("yure")
 // dict com os codes
 const codigos = {
         ATENAS: {
@@ -40,6 +41,10 @@ const codigos = {
         RAÇA: {
             img: josueimagem,
             src: 'imgs/jotinhaburro.jpg'
+        },
+        CAVACO: {
+            img: yuriimagem,
+            src: 'imgs/yuritrenando.png'
         }
 };
 
