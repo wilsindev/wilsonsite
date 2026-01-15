@@ -55,7 +55,7 @@ let tentativa_code = '';
 
 redeem.addEventListener('click', () => {
     tentativa_code = inputcodigo.value.toUpperCase();
-    if (!(codigos[tentativa_code])){
+    if (!(tentativa_code in codigos)){
         inputcodigo.value = 'Código inválido.';
         // o que ele deve fazer e depois de quanto tempo
         setTimeout(() => {
@@ -67,12 +67,9 @@ redeem.addEventListener('click', () => {
         const img = codigos[tentativa_code].img;
         const src = codigos[tentativa_code].src;
         img.src = src;
-    }   
-
         inputcodigo.value = 'Algo mudou no site...';
         setTimeout(() => {
             inputcodigo.value = '';
         }, 1000);
-
-
+    }   
 });

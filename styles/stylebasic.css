@@ -15,7 +15,16 @@ body{
     margin: 0;
     background-color: black;
     color:  var(--cor-dourada);
+    cursor: url("../imgs/cursor-32.png") 0 0, auto;
 }
+button, li, a{
+    cursor: url("../imgs/cursor-click-32.png") 0 0, auto;
+}
+img {
+    /* impede o user de poder arrastar a imagem por ai */
+    -webkit-user-drag: none;
+}
+
 ::-webkit-scrollbar {
     width: 20px;
 }
